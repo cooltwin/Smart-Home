@@ -35,13 +35,13 @@ public class ShareLock extends Activity {
 				String str3 = Access_Type.getText().toString();
 				if (str3.length() == 0)
 				Access_Type.setError("Address is required");
-				/*try {
+				try {
 				// add database check to validate if lock id is valid or arbitrary
 				Lock_Id.setError("Invalid Lock Id");
 				}
 				catch(NumberFormatException e) {
 					System.out.println("Lock id does not exists in database");
-				} */
+				} 
 		        } 
 			});
 		}
