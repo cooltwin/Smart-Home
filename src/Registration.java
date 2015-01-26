@@ -134,11 +134,11 @@ public class Registration extends Activity {
 				jsonObject.accumulate("address",addr);
 
 				// Add a nested JSONObject (e.g. for header information)
-				/*JSONObject header = new JSONObject();
+				JSONObject header = new JSONObject();
 				header.put("deviceType","Android"); // Device type
 				header.put("deviceVersion","2.0"); // Device OS version
 				header.put("language", "es-es");	// Language of the Android client
-				jsonObject.put("header", header);*/
+				jsonObject.put("header", header);
 				// Output the JSON object we're sending to Logcat:
 				
 				URL = "http://162.243.114.166/cgi-bin/Database_scripts/Registration_script.py";
@@ -150,7 +150,7 @@ public class Registration extends Activity {
 				System.out.println("printing se : "+se);
 				
 
-				/*// Set HTTP parameters
+				// Set HTTP parameters
 				httpPostRequest.setEntity(se);
 				System.out.println("printing req : "+httpPostRequest.getEntity().getContent().toString());
 				httpPostRequest.setHeader("Accept", "application/json");
@@ -179,9 +179,9 @@ public class Registration extends Activity {
 				HttpEntity entity = response.getEntity();
 				String serverresp = entity.toString();
 				System.out.println("printing server response, entity length : "+entity.getContentLength());
-				System.out.println("printing server response : "+serverresp);*/
+				System.out.println("printing server response : "+serverresp);
 				
-				/*if (entity != null) {
+				if (entity != null) {
 					// Read the content stream
 					InputStream instream = entity.getContent();
 					Header contentEncoding = response.getFirstHeader("Content-Encoding");
@@ -200,7 +200,7 @@ public class Registration extends Activity {
 					Log.i(TAG,"<JSONObject>\n"+jsonObjRecv.toString()+"\n</JSONObject>");
 					System.out.println("Debug point : 1.4");
 					return jsonObjRecv;
-				} */
+				} 
 				//return serverresp;
 				
 				try 
