@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smarthomeapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.smarthomeapp.MainActivity"
+            android:label="@string/SmartHomeApp" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.smarthomeapp.SignIn"
+            android:label="@string/title_activity_sign_in" >
+        </activity>
+        <activity
+            android:name="com.example.smarthomeapp.LauncherActivity"
+            android:label="@string/title_activity_launcher" >
+        </activity>
+        <activity
+            android:name="com.example.smarthomeapp.LockPage"
+            android:label="@string/title_activity_lock_page"
+            android:parentActivityName="com.example.myfirstapp.LauncherActivity" >
+        </activity>
+        <activity
+            android:name="com.example.smarthomeapp.AddNewLock"
+            android:label="@string/title_activity_add_new_lock" >
+        </activity>
+        <activity
+            android:name="com.example.smarthomeapp.ShareLock"
+            android:label="@string/title_activity_share_lock" >
+        </activity>
+        <activity
+            android:name="com.example.smarthomeapp.ViewLock"
+            android:label="@string/title_activity_view_lock" >
+        </activity>
+        <activity
+            android:name="com.example.smarthomeapp.LockUnlockGarage"
+            android:label="@string/title_activity_lock_unlock_garage" >
+        </activity>
+        <activity
+            android:name="com.example.smarthomeapp.NewRegistrationActivity"
+            android:label="@string/title_activity_new_registration" >
+        </activity>
+    </application>
+
+</manifest>
